@@ -74,9 +74,9 @@ function checkout() {
                             role="link"
                             onClick={createCheckoutSession}
                              disabled={!session}
-                             className={`button mt-2 ${!session && 
-                            'from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed'}`}>
-                                {!session ? "Sign In To Checkout":"Proceed To Checkout"}
+                             className={`button mt-2 animate-pulse ${!session && 
+                            'from-gray-300 to-gray-500 border-gray-200 text-gray-800  cursor-not-allowed '}`}>
+                                {!session ? "Sign In To Checkout":"Proceed To Checkout "}
                             </button>
                         </>
                     )}

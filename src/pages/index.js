@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import Banner from "../components/Banner"
 import ProductFeed from "../components/ProductFeed"
 import {getSession} from "next-auth/client"
+import Footer from "../components/footer";
 export default function Home({products}) {
   return (
     <div>
@@ -17,7 +18,7 @@ export default function Home({products}) {
         <Banner />
         {/*Product feed */}
         <ProductFeed products={products} />
-        
+        <Footer />
       </main>
     </div>
   );
