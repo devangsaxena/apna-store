@@ -4,11 +4,12 @@ import Banner from "../components/Banner"
 import ProductFeed from "../components/ProductFeed"
 import {getSession} from "next-auth/client"
 import Footer from "../components/footer";
+import ChatBot from "../components/ChatBot";
 export default function Home({products}) {
   return (
     <div>
       <Head className="bg-gray-100">
-        <title>Amazon 2.0</title>
+        <title>Apna-Store</title>
       </Head>
 
       {/*Header */}
@@ -18,6 +19,9 @@ export default function Home({products}) {
         <Banner />
         {/*Product feed */}
         <ProductFeed products={products} />
+        
+        
+        <ChatBot/>
         <Footer />
       </main>
     </div>

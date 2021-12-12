@@ -18,7 +18,7 @@ function Header() {
 
     const items=useSelector(selectItems);
     return (
-        <header>
+        <header >
             {/*top navbar */}
             <div className="  flex  items-center bg-amazon_blue p-1 flex-grow py-2 ">
                 

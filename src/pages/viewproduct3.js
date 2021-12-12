@@ -93,21 +93,21 @@ function view1({id,title,price,description,category,image}) {
                             </tr>
                             <tr>
                                 <td>Color Code</td>
-                                <td>Grey</td>
+                                <td>Light Brown</td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>Type</td>
-                                <td>Laptop Backpack</td>
+                                <td>Jacket</td>
                                 <td></td>
                             </tr>
                             <tr class="bg-emerald-200">
-                                <td>Trolley Support</td>
+                                <td>Washable</td>
                                 <td>Yes</td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td>With Rain Cover</td>
+                                <td>Iron Support</td>
                                 <td>No</td>
                                 <td></td>
                             </tr>

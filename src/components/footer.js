@@ -15,10 +15,10 @@ function Footer() {
 
     const items=useSelector(selectItems);
     return (
-        <footer>
+        <footer class=" bottom-0 z-50">
             
             <div class=" bg-amazon_blue">
-                <div class="grid grid-cols-2 gap-2 p-5 mx-auto text-sm text-white sm:p-8 md:p-10 md:grid-cols-3 max-w-screen-2xl lg:grid-cols-4">
+                <div class=" grid grid-cols-2 gap-2 p-5 mx-auto text-sm text-white sm:p-8 md:p-10 md:grid-cols-3 max-w-screen-2xl lg:grid-cols-4">
                     <div class="p-2">
                         <div class="my-2 text-base font-bold">Get to Know Us</div>
                         <div class="space-y-1">
@@ -51,23 +51,17 @@ function Footer() {
                                     <p class="link" href="#">Apna Store Currency Converter</p>
                                 </div>
                             </div>
-                            <div class="p-2">
-                                <div class="my-2 text-base font-bold">Let Us Help You</div>
-                                <div class="space-y-1">
-                                    <p class="link" href="#">Apna Store and COVID-19</p>
-                                    <p class="link" href="#">Your Account</p>
-                                    <p class="link" href="#">Your Orders</p>
-                                    <p class="link" href="#">Shipping Rates &amp; Policies</p>
-                                    <p class="link" href="#">Returns &amp; Replacements</p>
-                                    <p class="link" href="#">Manage Your Content and Devices</p>
-                                    <p class="link" href="#">Apna Store Assistant</p>
-                                    <p class="link" href="#">Help</p>
-                                    </div>
-                                    </div>
                                 </div>
                             </div>
+                            <div>
+
+                                
+                    
+        
+	</div>
         </footer>
     )
+
 }
 
 export default Footer

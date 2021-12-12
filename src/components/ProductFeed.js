@@ -46,7 +46,9 @@ function ProductFeed({products}) {
                     image={image}
                 />
             ))}
+            
         </div>
+        
     );
 }
 
