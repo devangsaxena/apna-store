@@ -13,7 +13,7 @@ const stripePromise=loadStripe(process.env.stripe_public_key);
 import {useDispatch} from "react-redux";
 import {addToBasket} from "../slices/basketSlice";
 import Footer from '../components/footer';
-
+import ChatBot from '../components/ChatBot'
 const MAX_RATING=5;
 const MIN_RATING=1;
 const myLoader=({src})=>{
@@ -181,6 +181,7 @@ function view1({id,title,price,description,category,image}) {
                 {/*right side */}
                 
             </main>
+            <ChatBot />
             <Footer />
         </div>
     )
