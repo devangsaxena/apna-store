@@ -9,6 +9,9 @@ import {useSession} from "next-auth/client";
 import {loadStripe} from "@stripe/stripe-js";
 import axios from "axios";
 const stripePromise=loadStripe(process.env.stripe_public_key);
+const myLoader=({src})=>{
+    return "https://bit.ly/3oxOHB5";
+  }
 function checkout() {
     const items= useSelector(selectItems);
     const total=useSelector(selectTotal);
@@ -39,10 +42,11 @@ function checkout() {
                 {/*left side */}
                 <div className="flex-grow m-5 shadow-sm">
                     <Image 
-                        src="https://links.papareact.com/ikj"
+                        
+                        loader={myLoader} src="https://bit.ly/3oxOHB5"
                         width={1020}
                         height={250}
-                        objectFit="contain" 
+                        objectFit="fill" 
                     />
                     <div className='flex flex-col p-5 space-y-10 bg-white'>
                         <h1 className="text-3xl border-b pb-4">{items.length===0?'Your Apna-Store Basket Is Empty':"Shopping Basket"}</h1>
@@ -56,7 +60,7 @@ function checkout() {
                                 description={item.description}
                                 category={item.category}
                                 image={item.image}
-                                hasPrime={item.hasPrime}
+                                
                             />
                         ))}
                     </div>

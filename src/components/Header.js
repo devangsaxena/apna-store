@@ -20,7 +20,7 @@ function Header() {
     return (
         <header >
             {/*top navbar */}
-            <div className="  flex  items-center bg-amazon_blue p-1 flex-grow py-2 ">
+            <div className="  flex  items-center bg-blue-900  p-1 flex-grow py-2 ">
                 
                 <div className='mt-2 flex items-center flex-grow sm:flex-grow-0'>
                     <Image
@@ -36,15 +36,20 @@ function Header() {
                 </div>
                 
                 {/*Search bar */}
-                <div className="hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-white">
-                    <p className="items-center  animate-bounce font-extrabold text-lg italic "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                {<div className="hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-blue-900">
+                    {/*<p className="items-center  animate-bounce font-extrabold text-lg italic "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-                    🛒   अब &nbsp;करो&nbsp; जी&nbsp;  भर&nbsp;&nbsp;के&nbsp; खरीदारी &nbsp;...🛒  </p>
+    🛒   अब &nbsp;करो&nbsp; जी&nbsp;  भर&nbsp;&nbsp;के&nbsp; खरीदारी &nbsp;...🛒  </p>*/}
                     {/*<input className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4" type="text" />
                     <SearchIcon className="h-12 p-4" />*/}
-                </div>
+                    <marquee scrollamount="15" ><p className="items-center   font-extrabold text-2xl italic text-white"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+    🛒   अब &nbsp;करो&nbsp; जी&nbsp;  भर&nbsp;&nbsp;के&nbsp; खरीदारी &nbsp;...🛒  </p></marquee>
+                </div>}
                 {/*right icons */}
                 <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
                     <div className=" link">

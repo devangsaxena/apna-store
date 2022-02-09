@@ -56,8 +56,12 @@ function CheckoutProduct({
             
             {/*right add/remove buttons */}
             <div className="flex flex-col space-y-2 my-auto justify-self-end">
-                <button className="button" onClick={addItemToBasket}>Add to Basket</button>
-                <button className="button" onClick={removeItemFromBasket}>Remove from Basket</button>
+               { /*<button className="button" onClick={addItemToBasket}>Add to Basket</button>
+                <button className="button" onClick={removeItemFromBasket}>Remove from Basket</button>*/}
+                <button onClick={addItemToBasket} class="h-10 px-6 font-semibold rounded-md bg-black text-white ">Add to Basket</button>
+        
+        <button onClick={removeItemFromBasket} class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900 ">Remove from Basket</button>
+        
             </div>
         </div>
     )

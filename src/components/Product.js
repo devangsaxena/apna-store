@@ -64,11 +64,18 @@ function Product({id,title,price,description,category,image}) {
     }
 
     return (
-        <div className="relative flex flex-col m-5 bg-white z-30 p-10 ">
-            <p className="absolute top-2 right-2 text-xs italic text-gray-400">{category}</p>
-            <Image src={image} height={200} width={200} objectFit="contain" />
+        <div className="relative border-4 border-indigo-100 border-b-indigo-400 flex flex-col m-1 bg-white z-30 p-8 ">
+            <p className="absolute top-2 right-2 text-xs italic text-black-400 ">{category}</p>
+            <Image src={image} height={200} width={200} objectFit="contain" /><br></br><br></br>
+            <div class="flex-auto flex space-x-4 ">
+             <button onClick={addItemToBasket} class="h-10 px-6 font-semibold rounded-md bg-black text-white ">Add to Basket</button>
+        
+            <button onClick={seeview} class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900 ">View</button>
+            
+            </div>
+            <br></br>
             <h4 className="my-3">{title}</h4>
-            <div className="flex">
+            {/*<div className="flex">
                 {Array(rating)
                 .fill()
                 .map((_,i)=>(
@@ -76,23 +83,27 @@ function Product({id,title,price,description,category,image}) {
                 ))
                 }
                 
-            </div>
+            </div>*/}
             <p className="text-xs my-2">{description}</p>
             <div className="mb-5">
                 <Currency quantity={price} currency="INR" />
+                
             </div>
-            {hasPrime && (
+            
+            {/*{hasPrime && (
                 <div className="flex item-center space-x-2 -mt-5">
-                <img className="w-12" src="https://links.papareact.com/fdw" alt="" />
+                {/*<img className="w-12" src="https://links.papareact.com/fdw" alt="" />
                 <p className="text-xs mt-4 text-gray-500">FREE Next-Day Delivery</p>
                     
                 </div>
-            )}
+            )}*/}
+             
             
-            <button onClick={addItemToBasket} className=" button">Add to Basket</button>
+            {/*<button onClick={addItemToBasket} className=" button">Add to Basket</button>*/}
                 
-            <button onClick={seeview} className=" button  border border-yellow-300 shadow  ">View</button>
+           {/*<button onClick={seeview} className=" button  border border-blue-400 shadow  ">View</button>*/}
         </div>
+        
     )
 }
 
