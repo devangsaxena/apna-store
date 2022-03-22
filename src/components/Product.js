@@ -70,7 +70,7 @@ function Product({id,title,price,description,category,image}) {
             <div class="flex-auto flex space-x-4 ">
              <button onClick={addItemToBasket} class="h-10 px-6 font-semibold rounded-md bg-black text-white ">Add to Basket</button>
         
-            <button onClick={seeview} class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900 ">View</button>
+            <button onClick={seeview} class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900 border-black ">View</button>
             
             </div>
             <br></br>

@@ -10,7 +10,7 @@ import {
     ShoppingCartIcon,
 }from "@heroicons/react/outline";
 const myLoader=({src})=>{
-    return "https://bit.ly/3nH8JrD";
+    return "https://bit.ly/36lDgq6";
   }
 function Header() {
     const [session]=useSession();
@@ -25,7 +25,7 @@ function Header() {
                 <div className='mt-2 flex items-center flex-grow sm:flex-grow-0'>
                     <Image
                     onClick={()=>router.push('/')}
-                    loader={myLoader} src="https://bit.ly/3nH8JrD"
+                    loader={myLoader} src="https://bit.ly/36lDgq6"
                         width={90}
                         height={40}
                         objectFit="contain"
@@ -36,7 +36,7 @@ function Header() {
                 </div>
                 
                 {/*Search bar */}
-                {<div className="hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-blue-900">
+                {<div className="hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-violet-900">
                     {/*<p className="items-center  animate-bounce font-extrabold text-lg italic "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 

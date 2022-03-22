@@ -11,7 +11,7 @@ function Banner() {
                 showStatus={false}
                 showIndicators={false}
                 showThumbs={false}
-                interval={5000}
+                interval={3000}
             >
             <div>
                 <img loading="lazy" src="https://bit.ly/3mobY8f" alt="" />
