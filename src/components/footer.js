@@ -25,7 +25,7 @@ function Footer() {
                             <p class="link" href="#">Careers</p>
                             <p class="link" href="#">Blog</p>
                             <div onClick={()=>  router.push("/returnpolicy")} className="cursor-pointer link"><p>Apna Store Return Policy</p></div>
-                            <div onClick={()=>  router.push("/privacypolicy")} className="cursor-pointer link"><p>Apna Store Payment Privacy Policy</p></div>
+                            <div onClick={()=>  router.push("/privacypolicy")} className="cursor-pointer link"><p>Apna Store Privacy Policy</p></div>
                         
                             
                             <p class="link" href="#">Invester Relations</p>

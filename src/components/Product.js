@@ -75,7 +75,7 @@ function Product({id,title,price,description,category,image}) {
             </div>
             <br></br>
             <h4 className="my-3">{title}</h4>
-            {/*<div className="flex">
+            <div className="flex">
                 {Array(rating)
                 .fill()
                 .map((_,i)=>(
@@ -83,7 +83,7 @@ function Product({id,title,price,description,category,image}) {
                 ))
                 }
                 
-            </div>*/}
+            </div>
             <p className="text-xs my-2">{description}</p>
             <div className="mb-5">
                 <Currency quantity={price} currency="INR" />
