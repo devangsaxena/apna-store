@@ -11,16 +11,16 @@ function Banner() {
                 showStatus={false}
                 showIndicators={false}
                 showThumbs={false}
-                interval={3000}
+                interval={1500}
             >
             <div>
-                <img loading="lazy" src="https://bit.ly/3mobY8f" alt="" />
+                <img loading="lazy" src="https://bit.ly/386a6MR" alt="" />
             </div>
             <div>
-                <img loading="lazy" src="https://bit.ly/3GxjTb1" alt="" />
+                <img loading="lazy" src="https://bit.ly/3wIDPDM" alt="" />
             </div>
             <div>
-                <img loading="lazy" src="https://bit.ly/3nJN826" alt="" />
+                <img loading="lazy" src="https://bit.ly/3lw2Ehd" alt="" />
             </div>
             
             </Carousel>

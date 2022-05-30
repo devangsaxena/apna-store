@@ -20,7 +20,6 @@ export default function Home({products}) {
         {/*Product feed */}
         <ProductFeed products={products} />
         
-        
         <ChatBot/>
         <Footer />
       </main>

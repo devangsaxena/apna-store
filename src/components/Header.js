@@ -20,36 +20,30 @@ function Header() {
     return (
         <header >
             {/*top navbar */}
-            <div className="  flex  items-center bg-blue-900  p-1 flex-grow py-2 ">
+            <div className=" flex  items-center bg-blue-900  p-1 flex-grow py-2 ">
                 
-                <div className='mt-2 flex items-center flex-grow sm:flex-grow-0'>
+                <div className='-mt-1 flex items-center flex-grow sm:flex-grow-0'>
                     <Image
                     onClick={()=>router.push('/')}
                     loader={myLoader} src="https://bit.ly/36lDgq6"
                         width={90}
-                        height={40}
+                        height={47}
                         objectFit="contain"
                         className="cursor-pointer"
                      />
-                     /*<div className="link" ><p onClick={()=>router.push('/')} className="font-extrabold md:text-xl text-white mr-10 -ml-8 mb-3 mt-2">Apna-Store</p></div>
+                     <div className="link" ><p onClick={()=>router.push('/')} className="font-extrabold md:text-xl text-white mr-5 -ml-4 mb-2 mt-2">Apna Store   </p></div>
                      
                 </div>
                 
                 {/*Search bar */}
-                {<div className="hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-violet-900">
-                    {/*<p className="items-center  animate-bounce font-extrabold text-lg italic "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-    🛒   अब &nbsp;करो&nbsp; जी&nbsp;  भर&nbsp;&nbsp;के&nbsp; खरीदारी &nbsp;...🛒  </p>*/}
-                    {/*<input className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4" type="text" />
-                    <SearchIcon className="h-12 p-4" />*/}
+                <div className="hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-violet-900">
                     <marquee scrollamount="15" ><p className="items-center   font-extrabold text-2xl italic text-white"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-    🛒   अब &nbsp;करो&nbsp; जी&nbsp;  भर&nbsp;&nbsp;के&nbsp; खरीदारी &nbsp;...🛒  </p></marquee>
-                </div>}
+                    🛒   अब &nbsp;करो&nbsp; जी&nbsp;  भर&nbsp;&nbsp;के&nbsp; खरीदारी &nbsp;...🛒  </p></marquee>
+                    
+                </div>
                 {/*right icons */}
                 <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
                     <div className=" link">
@@ -58,8 +52,8 @@ function Header() {
                         <p className="font-extrabold md:text-sm">Sign Out</p>
                     </div>
                     <div onClick={()=>  router.push("/orders")} className="cursor-pointer link">
-                        <p>Past</p>
-                        <p className="font-extrabold md:text-sm"> Orders</p>
+                        <p>Orders</p>
+                        <p className="font-extrabold md:text-sm"> History</p>
                     </div>
                     <div onClick={()=>router.push("/checkout")} className="relative link flex items-center">
                         <span className="absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold">{items.length}</span>
@@ -68,25 +62,6 @@ function Header() {
                     </div>
                 </div>
             </div>
-            {/*bottom navbar */}
-            {/*<div className=' flex items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-white text-sm'>
-                
-                   <MenuIcon className="h-6 mr-1"/>
-                    All
-                   <p className='link flex items-center'>
-                    </p>
-                   
-                <p className='link'>Prime Video</p>
-                <p className='link'>Amazon Business</p>
-                <p className='link'>Today's deal</p>
-                <p className='link hidden lg:inline-flex'>Electronics</p>
-                <p className='link hidden lg:inline-flex'>Food & Grocery</p>
-                <p className='link hidden lg:inline-flex'>Prime</p>
-                
-                <p className='link hidden lg:inline-flex'>Buy Again</p>
-                <p className='link hidden lg:inline-flex'>Shopper Toolkit</p>
-                    <p className='link hidden lg:inline-flex'>Health & Personal Care</p>
-            </div>*/}
         </header>
     )
 }

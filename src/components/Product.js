@@ -89,19 +89,6 @@ function Product({id,title,price,description,category,image}) {
                 <Currency quantity={price} currency="INR" />
                 
             </div>
-            
-            {/*{hasPrime && (
-                <div className="flex item-center space-x-2 -mt-5">
-                {/*<img className="w-12" src="https://links.papareact.com/fdw" alt="" />
-                <p className="text-xs mt-4 text-gray-500">FREE Next-Day Delivery</p>
-                    
-                </div>
-            )}*/}
-             
-            
-            {/*<button onClick={addItemToBasket} className=" button">Add to Basket</button>*/}
-                
-           {/*<button onClick={seeview} className=" button  border border-blue-400 shadow  ">View</button>*/}
         </div>
         
     )
